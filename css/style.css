@@ -1,0 +1,37 @@
+:root {
+    --neon-red: #ff003c; /* Example value */
+    --transition: all 0.3s ease-in-out; /* Example value */
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #161A23;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 38px;
+    background: transparent;
+    color: var(--neon-red); /* Uses CSS Variable, define --neon-red elsewhere */
+    border: 2px solid var(--neon-red); /* Uses CSS Variable */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition); /* Uses CSS Variable, define --transition elsewhere */
+    box-shadow: 0 0 25px rgba(255, 0, 60, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 50px; /* This likely applies if the buttons are stacked vertically */
+}
+
+.btn:hover{
+    background-color: var(--neon-red);
+    color: #fff;
+}
